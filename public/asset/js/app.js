@@ -6,7 +6,7 @@ form.addEventListener('submit', function(e){
     if(email ==='' || password === ''){
         formClass.throwError()
     } else {
-        window.location.href = 'welcome.html'
+        window.location.href = 'profile.html'
     }
 })
 
