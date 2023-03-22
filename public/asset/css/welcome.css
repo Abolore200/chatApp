@@ -3,11 +3,26 @@ body{width:100%;font-family:'Raleway', Verdana, Geneva, Tahoma, sans-serif;scrol
 html{scroll-behavior:smooth;}
 a{text-decoration:none;color:#fff;}
 @media screen and (max-width:768px){
-    main{width:90%;margin:200px auto 0;}
+    main{width:90%;margin:200px auto;}
     .ds-dn-nf p{font-family:'Inter';font-weight:700;font-size:30px;color:rgba(0, 128, 0, 0.8);text-align:center;}
     .bd-ss-df{margin-top:30px;text-align:center;}
-    .bd-ss-df .log-in-btn a{padding:5px 0;background-color:rgba(0, 128, 0, 0.8);padding:9px 60px;border-radius:8px;
-    font-family:'Poppins';font-weight:700;font-size:18px;}
+    .bd-ss-df .log-in-btn a{border:1px solid rgba(0, 128, 0, 0.8);padding:9px 60px;border-radius:8px;
+    font-family:'Poppins';font-weight:700;font-size:18px;color:#000;position:relative;z-index:2;}
+    .bd-ss-df .log-in-btn a::before{content:"";background-color:rgba(0, 128, 0, 0.8);position:relative;width:0%;display:block;
+    position:absolute;right:0;left:0;bottom:0;border-radius:8px;top:0;z-index:-999;}
+    .bd-ss-df .log-in-btn a:hover::before{width:100%;transition:.5s;}
+    .bd-ss-df .log-in-btn a:hover{color:#fff;}
     .bd-ss-df .log-in-btn{margin-top:20px;text-align:center;}
     .bd-ss-df p{font-family:'Poppins';font-weight:400;font-size:18px;}
+    .or p{text-align:center;font-family:'Poppins';font-weight:700;font-size:25px;}
+    .or{margin:30px 0;}
+    .nc-sv-sd{margin-top:30px;text-align:center;}
+    .nc-sv-sd .sign-up-btn a{border:1px solid rgba(0, 128, 0, 0.8);padding:9px 60px;border-radius:8px;
+    font-family:'Poppins';font-weight:700;font-size:18px;color:#000;position:relative;z-index:2;}
+    .nc-sv-sd .sign-up-btn a::before{content:"";background-color:rgba(0, 128, 0, 0.8);position:relative;width:0%;display:block;
+    position:absolute;right:0;left:0;bottom:0;border-radius:8px;top:0;z-index:-999;}
+    .nc-sv-sd .sign-up-btn a:hover::before{width:100%;transition:.5s;}
+    .nc-sv-sd .sign-up-btn a:hover{color:#fff;}
+    .nc-sv-sd .sign-up-btn{margin-top:20px;text-align:center;}
+    .nc-sv-sd p{font-family:'Poppins';font-weight:400;font-size:18px;}
 }
