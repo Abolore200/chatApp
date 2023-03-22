@@ -15,7 +15,7 @@ a{text-decoration:none;color:#fff;}
     .ms-cd-fixed-navbar-col-row-3 p.addBg{background-color:#00AE3F;padding:15px 17px;}
     .ms-cd-fixed-navbar-col-row-1 p{padding:15px 14px;}
     .ms-cd-fixed-navbar-col-row-3 p a.addColor{color:#fff;}
-    main{margin-top:20px;}
+    main{margin-top:20px;margin-bottom:200px;}
     .hdj-sns-jdl{width:95%;margin:0 auto;}
     .profile-hd-sd-cf{border-bottom:2px solid #008000;padding-bottom:10px;}
     .profile-hd-sd-cf{display:flex;justify-content:space-between;align-items:center;}
@@ -31,4 +31,15 @@ a{text-decoration:none;color:#fff;}
     .pro-details-hf-te-bc{margin-top:30px;}
     .profile-name-gd-nc-te .pro-fullname p:first-child{font-family:'Poppins';font-weight:700;font-size:27px;line-height:25px;}
     .profile-name-gd-nc-te .pro-fullname p:last-child{font-family:'Poppins';font-weight:400;font-size:16px;}
+    .ul-list-jg-kf-dj ul{margin-top:20px;}
+    .ul-list-jg-kf-dj{width:95%;margin:0 auto;}
+    .ul-list-jg-kf-dj ul li{display:flex;align-items:center;justify-content:space-between;margin:35px 0;}
+    .ul-list-jg-kf-dj ul li .li-account{display:flex;align-items:center;}
+    .ul-list-jg-kf-dj ul li .li-account p:first-child{background-color:rgba(0, 0, 0, 0.2);border-radius:50%;height:40px;width:40px;
+    display:flex;align-items:center;justify-content:center;}
+    .ul-list-jg-kf-dj ul li .li-account p:first-child i{font-size:20px;color:rgba(0, 0, 0, 0.7);}
+    .ul-list-jg-kf-dj ul li .li-account p:last-child{padding-left:20px;font-family:'Poppins';font-weight:700;font-size:17px;}
+    .ul-list-jg-kf-dj ul li i{font-size:20px;}
+    .ul-list-jg-kf-dj ul li:last-child a{color:#000;}
+    .ul-list-jg-kf-dj ul li:last-child{display:block;}
 }
