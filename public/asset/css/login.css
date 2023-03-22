@@ -3,7 +3,7 @@ body{width:100%;font-family:'Raleway', Verdana, Geneva, Tahoma, sans-serif;scrol
 html{scroll-behavior:smooth;}
 a{text-decoration:none;color:#fff;}
 @media screen and (max-width:768px){
-    main{margin-top:20px;}
+    main{margin-top:20px;margin-bottom:200px;}
     .df-vb-he-gr a i{color:#000;font-size:24px;}
     .df-vb-he-gr{width:95%;margin:0 auto;}
     .fb-bd-js-fd{width:85%;margin:0 auto;}
@@ -16,4 +16,6 @@ a{text-decoration:none;color:#fff;}
     .input-jd-er-gs button{margin-top:30px;}
     .input-jd-er-gs button{width:100%;padding:17px 0;border-radius:50px;background-color:rgba(0, 128, 0, 0.8);border:none;}
     .input-jd-er-gs button{font-size:18px;font-family:'Poppins';font-weight:700;color:#fff;}
+    .error p{color:rgb(247, 79, 79);text-align:center;}
+    .error{margin-top:15px;}
 }
