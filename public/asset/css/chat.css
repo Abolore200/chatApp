@@ -25,4 +25,9 @@ a{text-decoration:none;color:#000;}
     .ms-cd-fixed-bottom-navbar-col form button i{font-size:33px;color:rgba(0, 128, 0, 0.8);}
     .ms-cd-fixed-bottom-navbar-col form textarea{height:40px;resize:none;}
     .chat-messages-hf-nd{position:relative;top:80px;width:95%;margin:10px auto 200px;}
+    .chat-messages-hf-nd ul li{list-style:none;margin:5px 0;}
+    .chat-messages-hf-nd ul li:first-child{margin-top:0;}
+    .chat-messages-hf-nd ul li:last-child{margin-bottom:0;}
+    .chat-messages-hf-nd ul li:nth-child(odd){text-align:right;}
+    .chat-messages-hf-nd ul li:nth-child(even){text-align:left;}
 }
