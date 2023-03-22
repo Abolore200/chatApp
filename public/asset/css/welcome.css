@@ -1,0 +1,13 @@
+*{padding:0;margin:0;outline:none;box-sizing:border-box;}
+body{width:100%;font-family:'Raleway', Verdana, Geneva, Tahoma, sans-serif;scroll-behavior:smooth;}
+html{scroll-behavior:smooth;}
+a{text-decoration:none;color:#fff;}
+@media screen and (max-width:768px){
+    main{width:90%;margin:200px auto 0;}
+    .ds-dn-nf p{font-family:'Inter';font-weight:700;font-size:30px;color:rgba(0, 128, 0, 0.8);text-align:center;}
+    .bd-ss-df{margin-top:30px;text-align:center;}
+    .bd-ss-df .log-in-btn a{padding:5px 0;background-color:rgba(0, 128, 0, 0.8);padding:9px 60px;border-radius:8px;
+    font-family:'Poppins';font-weight:700;font-size:18px;}
+    .bd-ss-df .log-in-btn{margin-top:20px;text-align:center;}
+    .bd-ss-df p{font-family:'Poppins';font-weight:400;font-size:18px;}
+}
