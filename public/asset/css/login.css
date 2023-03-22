@@ -6,7 +6,14 @@ a{text-decoration:none;color:#fff;}
     main{margin-top:20px;}
     .df-vb-he-gr a i{color:#000;font-size:24px;}
     .df-vb-he-gr{width:95%;margin:0 auto;}
-    .fb-bd-js-fd{width:95%;margin:0 auto;}
+    .fb-bd-js-fd{width:85%;margin:0 auto;}
     .fb-bd-js-fd form{margin-top:100px;}
     .img-ds-td-fg{text-align:center;}
+    .img-ds-td-fg p{font-family:'Inter';font-size:30px;font-weight:700;padding-top:15px;}
+    .input-jd-er-gs{margin-top:30px;}
+    .input-jd-er-gs input{margin:9px 0;width:100%;padding:15px 10px;border-radius:10px;background-color:rgba(128, 128, 128, 0.1);
+    border:none;font-family:'Inter';font-weight:400;font-size:16px;}
+    .input-jd-er-gs button{margin-top:30px;}
+    .input-jd-er-gs button{width:100%;padding:17px 0;border-radius:50px;background-color:rgba(0, 128, 0, 0.8);border:none;}
+    .input-jd-er-gs button{font-size:18px;font-family:'Poppins';font-weight:700;color:#fff;}
 }
