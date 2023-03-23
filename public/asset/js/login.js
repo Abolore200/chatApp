@@ -6,7 +6,7 @@ form.addEventListener('submit', function(e){
     if(email ==='' || password === ''){
         formClass.throwError()
     } else {
-        window.location.href = 'chat.html'
+        window.location.href = 'chat-home.html'
     }
 })
 
