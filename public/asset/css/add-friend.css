@@ -1,0 +1,27 @@
+*{padding:0;margin:0;outline:none;box-sizing:border-box;}
+body{width:100%;font-family:'Raleway', Verdana, Geneva, Tahoma, sans-serif;scroll-behavior:smooth;}
+html{scroll-behavior:smooth;}
+a{text-decoration:none;color:#000;}
+@media screen and (max-width:768px){
+    main{margin-top:20px;margin-bottom:200px;}
+    .ms-cd-fixed-navbar{width:100%;background-color:#fff;height:80px;position:fixed;bottom:0;box-shadow:0px -1px 11px rgba(0, 0, 0, 0.25);}
+    .ms-cd-fixed-navbar-col{display:flex;height:inherit;position:relative;}
+    .ms-cd-fixed-navbar-col-row-1,.ms-cd-fixed-navbar-col-row-2,.ms-cd-fixed-navbar-col-row-3{width:33.33%;height:inherit;}
+    .ms-cd-fixed-navbar-col-row-1 p,.ms-cd-fixed-navbar-col-row-2 p,.ms-cd-fixed-navbar-col-row-3 p{background-color:#fff;padding:15px;border-radius:50%;}
+    .ms-cd-fixed-navbar-col-row-1 p:hover,.ms-cd-fixed-navbar-col-row-2 p:hover,.ms-cd-fixed-navbar-col-row-3 p:hover{background-color:#00AE3F;box-shadow:1px 4px 11px rgba(0, 0, 0, 0.25);transition:.5s ease-out;}
+    .ms-cd-fixed-navbar-col-row-1 p:hover a,.ms-cd-fixed-navbar-col-row-2 p:hover a,.ms-cd-fixed-navbar-col-row-3 p:hover a{color:#fff;}
+    .ms-cd-fixed-navbar-col-row-1 p i,.ms-cd-fixed-navbar-col-row-2 p i,.ms-cd-fixed-navbar-col-row-3 p i{font-size:23px;}
+    .ms-cd-fixed-navbar-col-row-1 p a,.ms-cd-fixed-navbar-col-row-2 p a,.ms-cd-fixed-navbar-col-row-3 p a{color:#00AE3F;}
+    .ms-cd-fixed-navbar-col-row-1,.ms-cd-fixed-navbar-col-row-2,.ms-cd-fixed-navbar-col-row-3{display:flex;align-items:center;justify-content:center;}
+    .ms-cd-fixed-navbar-col-row-1 p.addBg{background-color:#00AE3F;padding:15px 14px;}
+    .ms-cd-fixed-navbar-col-row-1 p a.addColor{color:#fff;}
+    .fg-hs-nc-hd{width:95%;margin:0 auto;}
+    .chat-fh-je-nc{border-bottom:2px solid #008000;padding-bottom:10px;}
+    .chat-fh-je-nc{display:flex;justify-content:space-between;align-items:center;}
+    .chat-fh-je-nc p:first-child{font-family:'Inter';font-weight:700;font-size:25px;color:#008000;}
+    .chat-fh-je-nc p:last-child i{font-size:35px;color:#008000;}
+    .search-hf-bc-hd{margin-top:20px;position:relative;}
+    .nd-ff-yr-input-search input{width:100%;padding:15px 5px;position:relative;}
+    .nd-ff-yr-input-search i{position:absolute;left:0;top:14.5px;font-size:20px;}
+    .nd-ff-yr-input-search input{font-size:16px;font-family:'Raleway';}
+}
