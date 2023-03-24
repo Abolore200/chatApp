@@ -49,7 +49,7 @@ friendRequestAPI.onload = function(){
                     <div class="friend-detail">
                         <p>${all[i].name.first} ${all[i].name.last}</p>
                         <div class="acc-rem">
-                            <button>Accept</button>
+                            <button class="acceptBtn">Accept</button>
                             <button class="declineBtn">Decline</button>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ friendRequestAPI.onload = function(){
     }
 }
 friendRequestAPI.send()
-
+//add/remove friend from suggested friends list
 const btn = document.querySelector('.sug-friend')
 btn.addEventListener('click', function(e){
     //remove user from friends lists
@@ -72,12 +72,22 @@ btn.addEventListener('click', function(e){
     if(e.target.classList.contains('acceptBtn')){
         window.location.href = 'user-profile.html'
         const user = e.target.parentElement.parentElement.parentElement
-        acceptFriend.addFriend(user)
+        acceptFriend.addSuggestedFriend(user)
+    }
+})
+//accept/decline friend from friends request list
+const acceptBtn = document.querySelector('.friend-requests')
+acceptBtn.addEventListener('click', function(e){
+    e.preventDefault()
+    if(e.target.classList.contains('acceptBtn')){
+        const addFriend = e.target.parentElement.parentElement.parentElement
+        acceptFriend.addRequestedFriend(addFriend)
     }
 })
 
 class acceptUI{
-    addFriend(user){
+    //save [addsuggestedfriend] to session storage
+    addSuggestedFriend(user){
         const userArray = {
             userName: user.querySelector('.friend-detail p').textContent,
             userImg: user.querySelector('.friend-img img').src
@@ -85,14 +95,29 @@ class acceptUI{
         //save userArray to session storage
         acceptFriend.saveUserSS(userArray)
     }
-    saveUserSS(userArray){
-        let user = getUserSS()
-        user.push(userArray)
-        sessionStorage.setItem('userArray', JSON.stringify(userArray))
+        saveUserSS(userArray){
+            let user = getUserSS()
+            user.push(userArray)
+            sessionStorage.setItem('userArray', JSON.stringify(user))
+        }
+
+    //save [addRequestedFriend] to session storage
+    addRequestedFriend(addFriend){
+        const requestedFriend = {
+            userName: addFriend.querySelector('.req-friends .friend-detail p').textContent,
+            userImg: addFriend.querySelector('.req-friends .friend-img img').src
+        }
+        acceptFriend.saveRequestedFriendSS(requestedFriend)
     }
+        saveRequestedFriendSS(requestedFriend){
+            let reqFriend = getAddFriendSS()
+            reqFriend.push(requestedFriend)
+            sessionStorage.setItem('acceptFriends', JSON.stringify(reqFriend))
+        }
 }
 const acceptFriend = new acceptUI()
-//get userArray from session storage
+
+//get addSuggestedFriend[userArray] from session storage
 function getUserSS(){
     let user;
     let userSS = sessionStorage.getItem('userArray')
@@ -101,4 +126,14 @@ function getUserSS(){
     } else {
         user = JSON.parse(userSS)
     } return user
+}
+//get addRequestedFriend[addFriend] from session storage
+function getAddFriendSS(){
+    let addFriend;
+    let addFriendSS = sessionStorage.getItem('acceptFriends')
+    if(addFriendSS === null){
+        addFriend = []
+    } else {
+        addFriend = JSON.parse(addFriendSS)
+    } return addFriend
 }

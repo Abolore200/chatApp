@@ -25,4 +25,16 @@ a{text-decoration:none;color:#000;}
     .nd-ff-yr-input-search i{position:absolute;left:0;font-size:20px;padding-left:10px;color:rgba(0, 0, 0, 0.5);}
     .nd-ff-yr-input-search input{font-size:16px;font-family:'Raleway';font-weight:400;border:none;background-color:rgba(128, 128, 128, 0.1);}
     .nd-ff-yr-input-search{display:flex;align-items:center;}
+    .nf-jdk-nc-fs{width:95%;margin:30px auto 0;}
+    .bc-hf-us{width:100%;}
+    .chat-messages{display:flex;align-items:center;box-shadow:1px 4px 11px rgba(0, 0, 0, 0.15);border-radius:15px;padding:7px 10px;margin:8px 0;}
+    .chat-user-img{max-width:20%;min-height:65px;}
+    .chat-user-img img{max-width:100%;min-height:inherit;border-radius:50%;}
+    .chat-user-mg{width:60%;margin-left:5px;}
+    .chat-user-info{width:20%;display:flex;flex-direction:column;align-items:end;}
+    .chat-user-mg p:first-child{font-family:'Inter';font-weight:600;font-size:20px;}
+    .chat-user-mg p:last-child{font-family:'Raleway';font-weight:400;font-size:17px;}
+    .chat-user-info p:first-child{font-family:'Inter';font-weight:400;font-size:17px;}
+    .chat-user-info p:last-child{font-family:'Inter';font-weight:600;font-size:17px;background-color:rgba(0, 128, 0, 0.8);color:#fff;border-radius:50%;
+    height:25px;width:25px;display:flex;justify-content:center;align-items:center;}
 }

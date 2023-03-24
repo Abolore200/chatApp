@@ -13,6 +13,6 @@ const logOutBtn = document.querySelector('.ul-list-jg-kf-dj ul li:last-child a')
 logOutBtn.addEventListener('click', function(e){
     e.preventDefault()
     if(window.location.href = 'welcome.html'){
-        sessionStorage.removeItem('email')
+        sessionStorage.clear()
     }
 })
