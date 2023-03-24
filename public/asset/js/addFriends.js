@@ -10,7 +10,6 @@ newFriendAPI.open('GET', 'https://randomuser.me/api/?results=4&nat=us', true)
 newFriendAPI.onload = function(){
     if(this.status === 200){
         const all = JSON.parse(this.responseText).results
-        //generate random name for the friend lists
         let newFriend = ""
         for(let i =0; i < all.length; i++){
             newFriend += `
@@ -33,11 +32,13 @@ newFriendAPI.onload = function(){
 }
 newFriendAPI.send()
 
+//generate random and profile pictures for friend request
 const friendRequestAPI = new XMLHttpRequest()
 friendRequestAPI.open('GET', 'https://randomuser.me/api/?results=6&nat=us', true)
 friendRequestAPI.onload = function(){
     if(this.status === 200){
         const all = JSON.parse(this.responseText).results
+
         let friendRequest = ""
         for(let i =0; i < all.length; i++){
             friendRequest += `
@@ -60,7 +61,7 @@ friendRequestAPI.onload = function(){
 }
 friendRequestAPI.send()
 
-// const btn = document.querySelector('.friend-one')
+// const btn = document.querySelector('.new-friends')
 // btn.addEventListener('click', function(e){
 //     if(e.target.classList.contains('removeBtn')){
 //         const rem = e.target.parentElement.parentElement.parentElement
