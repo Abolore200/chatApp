@@ -29,4 +29,10 @@ a{text-decoration:none;color:#000;}
     .message-option-jf-nc button:first-child{margin-right:8px;background-color:#00AE3F;color:#fff;}
     .message-option-jf-nc button:last-child{margin-left:8px;background-color:rgba(128, 128, 128, 0.3);color:rgba(0, 0, 0, 0.7);}
     .dot-dot-dot p i{font-size:35px;}
+    .nc-hf-bc-jf{margin-top:15px;}
+    .vx-nv-jf-rf{display:flex;}
+    .vx-nv-jf-rf button{width:33.33%;margin:0 9px;background-color:rgba(128, 128, 128, 0.3);border-radius:5px;border:none;
+    font-family:'Poppins';font-weight:700;font-size:18px;padding:4px 0;}
+    .vx-nv-jf-rf button:first-child{margin-left:0px;}
+    .vx-nv-jf-rf button:last-child{margin-right:0px;}
 }

@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function(){
     profileBg.classList.add('addBg')
     const profileColor = document.querySelector('.ms-cd-fixed-navbar-col-row-1 p a')
     profileColor.classList.add('addColor')
+    //remove [userName] after 4seconds
+    setTimeout(function(){
+        document.querySelector('.user-name-mf-ks').remove()
+    },4000)
 })
 //add userArray name and picture to user profile from session storage
 const getUser = sessionStorage.getItem('userArray')
@@ -17,12 +21,6 @@ js.forEach(function(user){
     userImage += ` <img src="${user.userImg}" /> `;
     document.querySelector('.user-img-gd-nc-hs').innerHTML = userImage
 })
-
-//remove [userName]
-setTimeout(function(){
-    document.querySelector('.user-name-mf-ks').remove()
-},2000)
-
 
 const clearUserArray = document.querySelector('.df-vb-he-gr')
 clearUserArray.addEventListener('click', function(e){

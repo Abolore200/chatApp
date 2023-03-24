@@ -7,26 +7,24 @@ document.addEventListener('DOMContentLoaded', function(){
 
 const acceptFriendArray = sessionStorage.getItem('acceptFriends')
 const accFriJSON = JSON.parse(acceptFriendArray)
-
-// accFriJSON.forEach(function(one){
-    let chatUser = ""
-    for(let i = 0; i < accFriJSON.length; i++){
-        chatUser += `
-        <div class="chat-messages">
-            <div class="chat-user-img">
-                <img src="${accFriJSON[i].userImg}" alt="chat">
-            </div>
-            <div class="chat-user-mg">
-                <p>${accFriJSON[i].userName}</p>
-                <p>Good afternoon</p>
-            </div>
-            <div class="chat-user-info">
-                <p>1:00pm</p>
-                <p>3</p>
-            </div>
+//create new chat when the user clicks on friend request[accept]
+let chatUser = ""
+for(let i = 0; i < accFriJSON.length; i++){
+    chatUser += `
+    <div class="chat-messages">
+        <div class="chat-user-img">
+            <img src="${accFriJSON[i].userImg}" alt="chat">
         </div>
-        `
-        console.log(i);
-    }
-    document.querySelector('.bc-hf-us').innerHTML = chatUser
-// })
+        <div class="chat-user-mg">
+            <p>${accFriJSON[i].userName}</p>
+            <p>Good afternoon</p>
+        </div>
+        <div class="chat-user-info">
+            <p>1:00pm</p>
+            <p>3</p>
+        </div>
+    </div>
+    `
+    console.log(i);
+}
+document.querySelector('.bc-hf-us').innerHTML = chatUser
