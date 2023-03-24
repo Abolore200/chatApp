@@ -23,9 +23,9 @@ a{text-decoration:none;color:#fff;}
     .profile-hd-sd-cf p:last-child i{font-size:35px;color:#008000;}
     .profile-name-gd-nc-te{width:100%;display:flex;align-items:center;}
     .profile-name-gd-nc-te .pro-img{width:20%;min-height:68px;}
-    .profile-name-gd-nc-te .pro-fullname{width:65%;padding-left:10px;}
+    .profile-name-gd-nc-te .pro-fullname{width:70%;padding-left:5px;}
     .profile-name-gd-nc-te .pro-fullname p{text-align:start;}
-    .profile-name-gd-nc-te .pro-edit{width:15%;text-align:center;}
+    .profile-name-gd-nc-te .pro-edit{width:10%;text-align:center;}
     .profile-name-gd-nc-te .pro-edit p i{font-size:25px;}
     .profile-name-gd-nc-te .pro-img img{max-width:100%;border-radius:50%;min-height:inherit;}
     .pro-details-hf-te-bc{margin-top:30px;}

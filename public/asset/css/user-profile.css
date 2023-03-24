@@ -23,4 +23,10 @@ a{text-decoration:none;color:#000;}
     .user-img-gd-nc-hs{max-width:200px;min-height:200px;margin-top:15px;}
     .user-img-gd-nc-hs img{max-width:100%;min-height:inherit;border-radius:50%;}
     .ud-ms-md p{font-family:'Poppins';font-weight:700;font-size:22px;}
+    .hd-sj-nc-sb{display:flex;align-items:center;justify-content:space-between;margin-top:20px;padding-bottom:20px;border-bottom:1px solid #000;}
+    .message-option-jf-nc{display:flex;align-items:center;}
+    .message-option-jf-nc button{padding:4px 25px;border:none;border-radius:5px;font-family:'Poppins';font-weight:700;font-size:18px}
+    .message-option-jf-nc button:first-child{margin-right:8px;background-color:#00AE3F;color:#fff;}
+    .message-option-jf-nc button:last-child{margin-left:8px;background-color:rgba(128, 128, 128, 0.3);color:rgba(0, 0, 0, 0.7);}
+    .dot-dot-dot p i{font-size:35px;}
 }

@@ -46,5 +46,6 @@ a{text-decoration:none;color:#000;}
     .req-friends .friend-detail .acc-rem button{padding:5px 15px;font-size:19px;font-weight:600;font-family:'Raleway';border:none;border-radius:5px;line-height:22.5px;}
     .req-friends .friend-detail .acc-rem button:first-child{background-color:#00AE3F;color:#fff;}
     .req-friends .friend-detail .acc-rem button:last-child{margin-left:10px;background-color:rgba(128, 128, 128, 0.3);color:#000;}
-    
+    .loader{text-align:center;}
+    .loader img{display:none;margin:auto;width:100px;}
 }

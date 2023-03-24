@@ -28,3 +28,11 @@ clearUserArray.addEventListener('click', function(e){
         }
     }
 })
+
+const clickMessage = document.querySelector('.hd-sj-nc-sb')
+clickMessage.addEventListener('click', function(e){
+    e.preventDefault()
+    if(e.target.classList.contains('message')){
+        window.location.href = 'chat.html'
+    }
+})

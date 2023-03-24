@@ -16,3 +16,27 @@ form.addEventListener('submit', function(e){
     //clear textatrea
     form.reset()
 })
+//add name and picture to chat user profile from session storage
+const getUserArray = sessionStorage.getItem('userArray')
+const js = JSON.parse(getUserArray)
+//add name to chat user
+document.querySelector('.ndd-hjd-nxmd .pro-fullname p:first-child').innerHTML = `${js.userName}`
+//add picture to chat user
+let userImage = ""
+userImage += `<img src="${js.userImg}" />`
+document.querySelector('.pro-img').innerHTML = userImage
+
+const backBtn = document.querySelector('.back-btn')
+backBtn.addEventListener('click', function(e){
+    e.preventDefault()
+    if(e.target.classList.contains('fa-arrow-left')){
+        if(window.location.href = 'chat-home.html'){
+            sessionStorage.removeItem('userArray')
+        }
+    }
+})
+
+const names = js.userName
+if(names.length > 13){
+    document.querySelector('.ndd-hjd-nxmd .pro-fullname p:first-child').style.fontSize = '18px'
+}
