@@ -6,8 +6,10 @@ form.addEventListener('submit', function(e){
     if(email ==='' || password === ''){
         formClass.throwError()
     } else {
+        sessionStorage.setItem('email', email)
         window.location.href = 'chat-home.html'
     }
+
 })
 
 class formUI{
