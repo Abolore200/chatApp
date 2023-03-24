@@ -15,7 +15,9 @@ a{text-decoration:none;color:#000;}
     .ms-cd-fixed-navbar-col-row-1,.ms-cd-fixed-navbar-col-row-2,.ms-cd-fixed-navbar-col-row-3{display:flex;align-items:center;justify-content:center;}
     .ms-cd-fixed-navbar-col-row-1 p.addBg{background-color:#00AE3F;padding:15px 14px;}
     .ms-cd-fixed-navbar-col-row-1 p a.addColor{color:#fff;}
-    .hd-ns-gd-sj{width:95%;margin:0 auto;}
+    .nd-ke-jf{width:95%;margin:0 auto;}
+    .hf-nms-yf-lf{width:100%;}
+    .hd-ns-gd-sj{width:100%;}
     .add-friends-hf-sf-hv{border-bottom:2px solid #008000;padding-bottom:10px;}
     .add-friends-hf-sf-hv{display:flex;justify-content:space-between;align-items:center;}
     .add-friends-hf-sf-hv p:first-child{font-family:'Inter';font-weight:700;font-size:25px;color:#008000;}
@@ -23,24 +25,26 @@ a{text-decoration:none;color:#000;}
     .hd-js-jg{margin-top:10px;}
     .hd-js-jg p{font-family:'Raleway';font-size:19px;font-weight:600;text-transform:capitalize;}
     .sug-friend{margin-top:20px;}
-    .friend-one{display:flex;align-items:center;}
-    .friend-one .friend-img{max-width:69px;min-height:65px;}
-    .friend-one .friend-img img{max-width:100%;border-radius:50%;min-height:inherit;}
-    .friend-one .friend-detail{margin-left:10px;}
-    .friend-one .friend-detail p{font-family:'Inter';font-size:22px;font-weight:600;margin-bottom:7px;}
-    .friend-one .friend-detail .acc-rem{margin-top:7px;}
-    .friend-one .friend-detail .acc-rem button{padding:5px 15px;font-size:19px;font-weight:600;font-family:'Raleway';border:none;border-radius:5px;line-height:22.5px;}
-    .friend-one .friend-detail .acc-rem button:first-child{background-color:#00AE3F;color:#fff;}
-    .friend-one .friend-detail .acc-rem button:last-child{margin-left:10px;background-color:rgba(128, 128, 128, 0.3);color:#000;}
+    .new-friends{display:flex;align-items:center;margin-top:15px;}
+    .new-friends .friend-img{max-width:69px;min-height:65px;}
+    .new-friends .friend-img img{max-width:100%;border-radius:50%;min-height:inherit;}
+    .new-friends .friend-detail{margin-left:10px;}
+    .new-friends .friend-detail p{font-family:'Inter';font-size:22px;font-weight:600;margin-bottom:7px;}
+    .new-friends .friend-detail .acc-rem{margin-top:7px;}
+    .new-friends .friend-detail .acc-rem button{padding:5px 15px;font-size:19px;font-weight:600;font-family:'Raleway';border:none;border-radius:5px;line-height:22.5px;}
+    .new-friends .friend-detail .acc-rem button:first-child{background-color:#00AE3F;color:#fff;}
+    .new-friends .friend-detail .acc-rem button:last-child{margin-left:10px;background-color:rgba(128, 128, 128, 0.3);color:#000;}
+    .hd-nd-js-xc{margin-top:20px;}
+    .hd-aj-mc p{font-size:19px;font-weight:600;text-transform:capitalize;}
 
-    .friend-two{display:flex;align-items:center;margin-top:15px;}
-    .friend-two .friend-img{max-width:69px;min-height:65px;}
-    .friend-two .friend-img img{max-width:100%;border-radius:50%;min-height:inherit;}
-    .friend-two .friend-detail{margin-left:10px;}
-    .friend-two .friend-detail p{font-family:'Inter';font-size:22px;font-weight:600;margin-bottom:7px;}
-    .friend-two .friend-detail .acc-rem{margin-top:7px;}
-    .friend-two .friend-detail .acc-rem button{padding:5px 15px;font-size:19px;font-weight:600;font-family:'Raleway';border:none;border-radius:5px;line-height:22.5px;}
-    .friend-two .friend-detail .acc-rem button:first-child{background-color:#00AE3F;color:#fff;}
-    .friend-two .friend-detail .acc-rem button:last-child{margin-left:10px;background-color:rgba(128, 128, 128, 0.3);color:#000;}
-
+    .req-friends{display:flex;align-items:center;margin-top:15px;}
+    .req-friends .friend-img{max-width:69px;min-height:65px;}
+    .req-friends .friend-img img{max-width:100%;border-radius:50%;min-height:inherit;}
+    .req-friends .friend-detail{margin-left:10px;}
+    .req-friends .friend-detail p{font-family:'Inter';font-size:22px;font-weight:600;margin-bottom:7px;}
+    .req-friends .friend-detail .acc-rem{margin-top:7px;}
+    .req-friends .friend-detail .acc-rem button{padding:5px 15px;font-size:19px;font-weight:600;font-family:'Raleway';border:none;border-radius:5px;line-height:22.5px;}
+    .req-friends .friend-detail .acc-rem button:first-child{background-color:#00AE3F;color:#fff;}
+    .req-friends .friend-detail .acc-rem button:last-child{margin-left:10px;background-color:rgba(128, 128, 128, 0.3);color:#000;}
+    
 }
