@@ -98,7 +98,7 @@ class acceptUI{
         saveUserSS(userArray){
             let user = getUserSS()
             user.push(userArray)
-            sessionStorage.setItem('userArray', JSON.stringify(user))
+            sessionStorage.setItem('userArray', JSON.stringify(userArray))
         }
 
     //save [addRequestedFriend] to session storage

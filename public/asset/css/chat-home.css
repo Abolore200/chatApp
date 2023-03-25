@@ -37,4 +37,5 @@ a{text-decoration:none;color:#000;}
     .chat-user-info p:first-child{font-family:'Raleway';font-weight:400;font-size:15px;margin-bottom:3px;}
     .chat-user-info p:last-child{font-family:'Inter';font-weight:600;font-size:17px;background-color:rgba(0, 128, 0, 0.8);color:#fff;border-radius:50%;
     height:25px;width:25px;display:flex;justify-content:center;align-items:center;margin-top:3px;}
+    .btn{display:flex;width:100%;align-items:center;}
 }

@@ -8,19 +8,17 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector('.user-name-mf-ks').remove()
     },4000)
 })
-//add userArray name and picture to user profile from session storage
+// //add userArray name and picture to user profile from session storage
 const getUser = sessionStorage.getItem('userArray')
 let js = JSON.parse(getUser)
-js.forEach(function(user){
-    //userArray name
-    document.querySelector('.user-name-mf-ks p span').innerHTML = `${user.userName}`
-    document.querySelector('.ud-ms-md p').innerHTML = `${user.userName}`
+//userArray name
+document.querySelector('.user-name-mf-ks p span').innerHTML = `${js.userName}`
+document.querySelector('.ud-ms-md p').innerHTML = `${js.userName}`
 
-    //userArray image
-    let userImage = ""
-    userImage += ` <img src="${user.userImg}" /> `;
-    document.querySelector('.user-img-gd-nc-hs').innerHTML = userImage
-})
+//userArray image
+let userImage = ""
+userImage += ` <img src="${js.userImg}" /> `;
+document.querySelector('.user-img-gd-nc-hs').innerHTML = userImage
 
 const clearUserArray = document.querySelector('.df-vb-he-gr')
 clearUserArray.addEventListener('click', function(e){
@@ -37,5 +35,18 @@ clickMessage.addEventListener('click', function(e){
     e.preventDefault()
     if(e.target.classList.contains('message')){
         window.location.href = 'chat.html'
+        if(sessionStorage.getItem('userProfile') === [] || sessionStorage.getItem('userProlife') === null){
+            //add userArray name and picture to user profile from session storage
+            const getUser = sessionStorage.getItem('userArray')
+            let js = JSON.parse(getUser)
+            //userArray name
+            document.querySelector('.user-name-mf-ks p span').innerHTML = `${js.userName}`
+            document.querySelector('.ud-ms-md p').innerHTML = `${js.userName}`
+
+            //userArray image
+            let userImage = ""
+            userImage += ` <img src="${js.userImg}" /> `;
+            document.querySelector('.user-img-gd-nc-hs').innerHTML = userImage
+        }
     }
 })
